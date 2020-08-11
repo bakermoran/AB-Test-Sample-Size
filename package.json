@@ -1,0 +1,39 @@
+{
+  "name": "sample_size",
+  "version": "0.1.0",
+  "description": "sample_size front end",
+  "main": "sample_size/js/main.jsx",
+  "author": "Baker Moran",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakermoran/AB-Test-Sample-Size"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "==8.0.1",
+    "babel-loader": "^7.1.5",
+    "eslint": "==6.8.0",
+    "eslint-config-airbnb": "==15.1.0",
+    "eslint-plugin-import": "==2.7.0",
+    "eslint-plugin-jsx-a11y": "==5.1.1",
+    "eslint-plugin-react": "==7.4.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "==2.2.1",
+    "jsonlint": "==1.6.2",
+    "moment": "^2.18.1",
+    "nodeenv": "^1.0.0",
+    "npx": "^10.2.2",
+    "prop-types": "==15.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}
