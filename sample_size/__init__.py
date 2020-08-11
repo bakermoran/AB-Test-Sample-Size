@@ -17,5 +17,4 @@ app.config.from_object('sample_size.config')
 app.config.from_envvar('SAMPLESIZE_SETTINGS', silent=True)
 
 import sample_size.api  # noqa: E402  pylint: disable=wrong-import-position
-import sample_size.views  # noqa: E402  pylint: disable=wrong-import-position
 import sample_size.model  # noqa: E402  pylint: disable=wrong-import-position
