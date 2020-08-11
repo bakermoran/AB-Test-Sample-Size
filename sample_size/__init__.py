@@ -16,5 +16,10 @@ app.config.from_object('sample_size.config')
 # Reference: http://flask.pocoo.org/docs/0.12/config/
 app.config.from_envvar('SAMPLESIZE_SETTINGS', silent=True)
 
+import sample_size.main  # noqa: E402  pylint: disable=wrong-import-position
 import sample_size.api  # noqa: E402  pylint: disable=wrong-import-position
 import sample_size.model  # noqa: E402  pylint: disable=wrong-import-position
+
+
+if __name__ == "__main__":
+    app.run()
