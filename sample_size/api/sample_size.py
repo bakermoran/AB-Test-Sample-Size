@@ -101,15 +101,21 @@ def get_sample_size():
     """Get sample size estimate for parameters"""
 
     context = {}
+    loss_tolerance = flask.request.args.get('loss_tolerance',
+                                            default=.02, type=float)
     code = 200
     if flask.request.args.get('baseline_conversion_rate') is None:
-        code = 404
-        context['response_code'] = 404
+        code = 400
+        context['response_code'] = 400
         context['message'] = 'baseline_conversion_rate is a required argument'
     elif flask.request.args.get('expected_relative_lift') is None:
-        code = 404
-        context['response_code'] = 404
+        code = 400
+        context['response_code'] = 400
         context['message'] = 'expected_relative_lift is a required argument'
+    elif loss_tolerance < .001:
+        code = 400
+        context['response_code'] = 400
+        context['message'] = 'loss_tolerance must be greater than .001'
     else:
         baseline_conversion_rate = flask.request.args.get(
                                         'baseline_conversion_rate', type=float)
