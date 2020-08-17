@@ -7,4 +7,5 @@ import flask
 def home_view():
     """Return home route."""
 
-    return 'head to <a href="{0}api/v1">{0}</a>'.format(flask.request.url_root)
+    return 'for the api, head to <a href="{0}api/v1">{0}</a>'.format(
+            flask.request.url_root)

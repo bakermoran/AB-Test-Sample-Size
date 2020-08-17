@@ -7,7 +7,8 @@ import sample_size
 def get_v1():
     """Return list of services available."""
     context = {}
-    context['available_services'] = {'sample_size': "/api/v1/sample_size"}
+    context['available_services'] = {'sample_size': '/api/v1/sample_size',
+                                     'loss_function': '/api/v1/loss_function'}
     return flask.jsonify(**context)
 
 
