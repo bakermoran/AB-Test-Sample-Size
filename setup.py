@@ -21,6 +21,7 @@ setup(
         'pylint',
         'nodeenv',
         'sh',
+        'Flask-Cors',
         'Flask-Testing',
         'selenium',
         'requests',

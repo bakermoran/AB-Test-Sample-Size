@@ -8,4 +8,4 @@ A very simple website to host a calculator for a bayesian sample size estimate. 
 
 That is, it _would_ allow us to test fast, if we were not still using [this](https://www.evanmiller.org/ab-testing/sample-size.html) sample size calculator, backed by frequentist statistics. Working on a team that has very limited access to data volume, we _need_ to take advantage of this quality of Bayesian statistics. I therefore set out to make my own sample size calculator in order to justify a smaller sample size.
 
-Hosted with Heroku at https://ab-test-sample-size-backend.herokuapp.com/
+Hosted with Heroku at <https://ab-test-sample-size-backend.herokuapp.com/>

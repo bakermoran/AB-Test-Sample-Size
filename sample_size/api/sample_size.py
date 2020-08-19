@@ -30,7 +30,7 @@ def get_sample_size():
         expected_relative_lift = flask.request.args.get(
                                           'expected_relative_lift', type=float)
         loss_tolerance = flask.request.args.get('loss_tolerance',
-                                                default=.02, type=float)
+                                                default=.002, type=float)
         prior_alpha = flask.request.args.get('prior_alpha',
                                              default=1, type=int)
         prior_beta = flask.request.args.get('prior_beta', default=1, type=int)
